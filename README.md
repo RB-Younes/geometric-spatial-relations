@@ -124,10 +124,33 @@ When simplified to **4 directional classes** (`ABOVE`, `BELOW`, `BESIDE`, `DEPTH
 
 ---
 
-## 🚀 Getting Started
+## 🔬 Technical Implementation
 
-### Prerequisites
+### Key Classes
 
-```bash
-pip install -q tqdm pandas pillow scipy scikit-learn matplotlib seaborn
-pip install -q sentence-transformers transformers torch
+- **`HyperFastExtendedRLM`**: Implements 120-direction RLM with ConvexHull  
+- **`HyperFastPHIDescriptor`**: Implements Allen's relations for spatial intervals  
+- **`AdvancedSpatialClassifier`**: Handles training and evaluation  
+- **`SpatialErrorAnalyzer`**: Analyzes classification errors with visualizations  
+
+---
+## 📋 Requirements
+
+- Python 3.7+  
+- NumPy  
+- Pandas  
+- Matplotlib  
+- Seaborn  
+- Scikit-learn  
+- SciPy  
+- Transformers  
+- Sentence-Transformers  
+- Pillow (PIL)  
+- tqdm
+---
+## 👨‍💻 Author
+
+**REBAI Mohamed Younes**  
+Université Paris Cité  
+
+> For detailed implementation and experimental results, please refer to the Jupyter notebook provided in this repository.
