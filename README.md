@@ -4,7 +4,6 @@
 
 This repository implements geometric approaches for identifying spatial relationships between objects in images using the SpatialSense++ dataset. The project explores two main geometric descriptors: **Radial Line Model (RLM)** and **PHI Descriptor** based on Allen's interval relations, demonstrating that purely geometric features can effectively capture spatial relationships without requiring image processing or textual analysis.
 
-<!-- Replace with Figure from slide 3: Introduction example showing "cat on basket" -->
 ![Spatial Relations Examples](./images/0.png)
 
 ## 🎯 Objectives
@@ -29,7 +28,6 @@ The **SpatialSense++** dataset contains:
 - `on`, `behind`, `in front of`, `next to`  
 - `under`, `in`, `above`, `to the left of`, `to the right of`  
 
-<!-- Replace with Figure from slide 5: Pie chart showing distribution of spatial relations -->
 ![Spatial Relations Examples](./images/2.png)
 
 ---
@@ -40,7 +38,7 @@ The **SpatialSense++** dataset contains:
 
 The RLM approach performs directional analysis using **120 radial directions**:
 
-<!-- Replace with Figure from slide 7-8: RLM functioning diagram -->
+![Spatial Relations Examples](./images/4.png)
 
 **Key Components**:
 
@@ -57,13 +55,17 @@ The RLM approach performs directional analysis using **120 radial directions**:
 The PHI approach applies **Allen's 13 temporal relations** to spatial intervals:
 
 <!-- Replace with Figure from slide 10-11: PHI method diagram -->
+![Spatial Relations Examples](./images/5.png)
 
 **Key Components**:
 
 - **Horizontal Intervals**: [x1, x2] for each object  
 - **Vertical Intervals**: [y1, y2] for each object  
 - **Allen Relations**: 13 temporal relations classification  
-- **Features**: 26D (13 horizontal + 13 vertical)  
+- **Features**: 26D (13 horizontal + 13 vertical)
+
+![Spatial Relations Examples](./images/6.png)
+
 
 ---
 
@@ -75,6 +77,7 @@ Concatenation of both feature sets for enhanced spatial understanding:
 - **Classification**: MLP (386→512→256→9) / SVM  
 
 <!-- Replace with Figure from slide 12: Combined method pipeline -->
+![Spatial Relations Examples](./images/7.png)
 
 ---
 
@@ -93,6 +96,9 @@ Concatenation of both feature sets for enhanced spatial understanding:
 ### Confusion Matrices
 
 <!-- Replace with Figures from slides 13-15: Confusion matrices for each method -->
+![Spatial Relations Examples](./images/8.png)
+![Spatial Relations Examples](./images/9.png)
+![Spatial Relations Examples](./images/10.png)
 
 ---
 
@@ -101,6 +107,7 @@ Concatenation of both feature sets for enhanced spatial understanding:
 The training process shows convergence with early stopping mechanisms:
 
 <!-- Replace with Figure from slide 16: Training loss curves -->
+![Spatial Relations Examples](./images/11.png)
 
 ---
 
@@ -123,6 +130,7 @@ Common classification errors include:
 When simplified to **4 directional classes** (`ABOVE`, `BELOW`, `BESIDE`, `DEPTH`), the model achieves **56.6% accuracy**:
 
 <!-- Replace with Figure from slide 18: 4-class confusion matrix -->
+![Spatial Relations Examples](./images/12.png)
 
 ---
 
