@@ -38,7 +38,7 @@ The **SpatialSense++** dataset contains:
 
 The RLM approach performs directional analysis using **120 radial directions**:
 
-![Spatial Relations Examples](./images/4.png)
+![Spatial Relations Examples](./images/3.png)
 
 **Key Components**:
 
@@ -47,6 +47,8 @@ The RLM approach performs directional analysis using **120 radial directions**:
 - **120 Radial Directions**: High-resolution directional analysis  
 - **Force Models**: `f0` (constant) + `f2` (gravitational forces)  
 - **Features**: 360D (120 directions × 3 components)  
+![Spatial Relations Examples](./images/4.png)
+
 
 ---
 
