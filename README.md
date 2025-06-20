@@ -5,6 +5,7 @@
 This repository implements geometric approaches for identifying spatial relationships between objects in images using the SpatialSense++ dataset. The project explores two main geometric descriptors: **Radial Line Model (RLM)** and **PHI Descriptor** based on Allen's interval relations, demonstrating that purely geometric features can effectively capture spatial relationships without requiring image processing or textual analysis.
 
 <!-- Replace with Figure from slide 3: Introduction example showing "cat on basket" -->
+![Spatial Relations Examples](./images/0.png)
 
 ## 🎯 Objectives
 
@@ -29,6 +30,7 @@ The **SpatialSense++** dataset contains:
 - `under`, `in`, `above`, `to the left of`, `to the right of`  
 
 <!-- Replace with Figure from slide 5: Pie chart showing distribution of spatial relations -->
+![Spatial Relations Examples](./images/2.png)
 
 ---
 
